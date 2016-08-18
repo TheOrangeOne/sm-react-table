@@ -1,0 +1,181 @@
+.smtable-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.smtable-table-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.smtable-table {
+  display: flex;
+  flex: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  position: relative;
+  will-change: transform;
+}
+
+.smtable-row {
+  align-items: center;
+  background-color: #eaeae8;
+  box-sizing: border-box;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+
+/*
+.smtable-row:hover {
+  background-color: #f2f2f2;
+}
+*/
+
+.smtable-cell {
+  overflow: hidden;
+  padding: 0px 5px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.smtable-header-row-cell {
+  background-color: #94938c;
+  overflow: hidden;
+  padding: 0px 5px;
+  text-overflow: ellipsis;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.smtable-header-row-wrapper {
+  margin-right: 15px;
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+}
+
+.smtable-header-row {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  padding-right: 17px;
+  position: absolute;
+  text-overflow: ellipsis;
+}
+
+.smtable-rows-wrapper {
+  margin-top: 40px;
+  position: absolute;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+.smtable-rows {
+  position: absolute;
+  display: flex;
+  flex: 1;
+}
+
+.smtable-row-selected {
+  background-color: #BEBDB7;
+}
+
+.smtable-sort-icon {
+  float: right;
+}
+
+.smtable-row-selectable {
+  cursor: pointer;
+}
+
+.smtable-check-icon {
+  color: #00858B;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.smtable-check-header-icon {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.smtable-unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.smtable-icon {
+  color: #00858B;
+  font-size: 16px;
+  margin-right: 5px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.smtable-capitalize {
+  text-transform: uppercase;
+}
+
+.smtable-clickable {
+  cursor: pointer;
+}
+
+.react-context-menu {
+  min-width: 100px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #373a3c;
+  text-align: left;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  outline: none;
+  overflow: hidden;
+}
+
+.react-context-menu-link {
+  display: inline-block;
+  width: 100%;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #373a3c;
+  text-align: inherit;
+  white-space: nowrap;
+  background: 0 0;
+  border: 0;
+}
+
+.react-context-menu-link.active,
+.react-context-menu-link:hover {
+  background-color: #E5F4F3;
+  border-color: #e5f4f3;
+  text-decoration: none;
+}
+.react-context-menu-item.submenu > a {
+  padding-right: 27px;
+}
+
+.react-context-menu-item.submenu > a:after {
+  content: "▶";
+  display: inline-block;
+  position: absolute;
+  right: 7px;
+}
